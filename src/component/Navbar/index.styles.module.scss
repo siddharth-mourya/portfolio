@@ -1,0 +1,10 @@
+.navbar {
+  z-index: 100;
+}
+.navbar-on-scroll {
+  box-shadow: 0 4px 6px -6px #222;
+  z-index: 500;
+  color: black;
+  background-color: white;
+  transition: 1s;
+}

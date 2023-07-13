@@ -1,0 +1,50 @@
+/* custom scroll bar with yellow thumb */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c39611;
+}
+
+
+// ----------------------theme color
+.text-yellow-theme {
+    color: #ffc107;
+}
+
+.bg-yellow-theme {
+    background: #ffc107;
+}
+
+.bg-yellow-light {
+    background-color: #f7e133;
+}
+
+
+// ---------------- horizontal strikethrough line
+
+.heading-line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+
+    span {
+        background: #fff;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,13 @@
+.timeline {
+  list-style-type: none;
+  position: relative;
+  li {
+    margin: 20px 0;
+    .company-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 2px solid #d4d9df;
+    }
+  }
+}
