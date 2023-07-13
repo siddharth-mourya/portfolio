@@ -28,7 +28,7 @@ const Aboutme = () => {
               src={`${process.env.PUBLIC_URL}/images/animated/aboutme.gif`}
             />
           </div>
-          <div className="col-md-6 col-sm-10 p-sm-3 ">
+          <div className="col-md-6 col-sm-10 p-sm-3 mt-4 mt-md-0">
             <div
               className="p-2 mb-2 d-flex justify-content-between
              rounded-pill border align-items-center"
