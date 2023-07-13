@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`navbar  ${
+        className={`${styles["navbar"]} navbar ${
           scrolled ? styles["navbar-on-scroll"] : ""
         } px-lg-5 bg-white navbar-light px-md-5 position-fixed vw-100 navbar-expand-sm`}
       >
