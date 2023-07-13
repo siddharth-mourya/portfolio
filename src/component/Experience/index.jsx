@@ -93,7 +93,7 @@ const Experience = () => {
                     />
                     <div className="ml-2">
                       <h4 className="mb-0">{exp.position}</h4>
-                      <h5>{exp.company}</h5>
+                      <h5 className="text-primary">{exp.company}</h5>
                       <h6>{exp.date}</h6>
                       {/* {exp.description.map((des) => (
                         <p className="mb-0"> * {des}</p>
