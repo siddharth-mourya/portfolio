@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import styles from "./index.styles.module.scss";
 
 const Experience = () => {
@@ -104,7 +104,7 @@ const Experience = () => {
               ))}
             </ul>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-4 mt-md-0">
             <h2 className="text-warning text-center">Education</h2>
             <ul className={styles["timeline"]}>
               {education.map((edu) => (
