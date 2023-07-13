@@ -25,7 +25,7 @@ const Header = () => {
     <>
       <div className="header d-flex container-fluid justify-content-center align-items-center vh-100">
         <div className="row w-100 justify-content-center">
-          <div className="col-lg-4 col-md-6 col-sm-10 order-2 order-md-1 text-md-left text-lg-left text-center">
+          <div className="col-lg-4 col-md-6 col-sm-10 order-2 order-md-1 text-md-left text-lg-left text-center mt-4 mt-md-0">
             <h2>
               <span className="text-warning">Siddharth Mourya</span>
             </h2>
