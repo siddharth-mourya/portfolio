@@ -15,8 +15,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/React.png`}
             />
@@ -25,8 +25,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/Node.png`}
             />
@@ -35,8 +35,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/HTML.png`}
             />
@@ -45,8 +45,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/CSS.png`}
             />
@@ -55,8 +55,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/Javascript.png`}
             />
@@ -65,8 +65,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/MongoDB.png`}
             />
@@ -75,8 +75,8 @@ const Skills = () => {
           <div className="skill text-center p-3 ">
             <img
               className=""
-              width="70px"
-              height="70px"
+              width="60px"
+              height="60px"
               alt="this cannot be displayed"
               src={`${process.env.PUBLIC_URL}/images/skills/Bootstrap.png`}
             />
