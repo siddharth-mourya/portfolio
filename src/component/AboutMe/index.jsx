@@ -20,7 +20,7 @@ const Aboutme = () => {
             </h3>
           </div>
         </div>
-        <div className="row w-100 justify-content-center">
+        <div className="row m-0  w-100 justify-content-center">
           <div className="col-md-6 text-center col-sm-10">
             <img
               className="w-50"
