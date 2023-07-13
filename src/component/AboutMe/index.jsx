@@ -12,7 +12,7 @@ const Aboutme = () => {
 
   return (
     <>
-      <div className="header align-items-center mt-2 px-5 w-100 mb-5">
+      <div className="header align-items-center mt-2 px-2 px-md-5 w-100 mb-5">
         <div className="row pb-2">
           <div className="col-12 text-right pr-5">
             <h3>
