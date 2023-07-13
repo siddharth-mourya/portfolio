@@ -116,7 +116,7 @@ const Experience = () => {
                     />
                     <div className="ml-2">
                       <h4 className="mb-0">{edu.degree}</h4>
-                      <h5>{edu.school}</h5>
+                      <h5 className="text-primary">{edu.school}</h5>
                       <h6>{edu.date}</h6>
                       <p className="mb-0">{edu.description}</p>
                     </div>
