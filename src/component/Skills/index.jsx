@@ -4,7 +4,7 @@ import React from "react";
 const Skills = () => {
   return (
     <>
-      <div className="flex-wrap mb-5 shadow border border-light mx-5">
+      <div className="flex-wrap mb-5 shadow border border-light mx-3 mx-md-5">
         <div className="text-right mr-3 py-4">
           <h3>
             <span className="text-warning">S</span>
