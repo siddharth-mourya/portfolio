@@ -83,7 +83,7 @@ const Experience = () => {
         <div className="row">
           <div className="col-md-6">
             <h2 className="text-warning text-center ">Experience</h2>
-            <ul className={styles["timeline"]}>
+            <ul className={`px-2 ${styles["timeline"]}`}>
               {experience.map((exp) => (
                 <li className="mb-3">
                   <div className="d-flex justify-content-start">
@@ -106,7 +106,7 @@ const Experience = () => {
           </div>
           <div className="col-md-6 mt-4 mt-md-0">
             <h2 className="text-warning text-center">Education</h2>
-            <ul className={styles["timeline"]}>
+            <ul className={`px-2 ${styles["timeline"]}`}>
               {education.map((edu) => (
                 <li className="mb-3">
                   <div className="d-flex justify-content-start">
