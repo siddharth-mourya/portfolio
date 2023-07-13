@@ -92,8 +92,8 @@ const Experience = () => {
                       src={exp.companyIcon}
                     />
                     <div className="ml-2">
-                      <h4 className="mb-0">{exp.position}</h4>
-                      <h5 className="text-primary">{exp.company}</h5>
+                      <h5 className="mb-0">{exp.position}</h5>
+                      <h6 className="text-primary">{exp.company}</h6>
                       <h6>{exp.date}</h6>
                       {/* {exp.description.map((des) => (
                         <p className="mb-0"> * {des}</p>
@@ -115,8 +115,8 @@ const Experience = () => {
                       src={edu.schoolIcon}
                     />
                     <div className="ml-2">
-                      <h4 className="mb-0">{edu.degree}</h4>
-                      <h5 className="text-primary">{edu.school}</h5>
+                      <h5 className="mb-0">{edu.degree}</h5>
+                      <h6 className="text-primary">{edu.school}</h6>
                       <h6>{edu.date}</h6>
                       <p className="mb-0">{edu.description}</p>
                     </div>
