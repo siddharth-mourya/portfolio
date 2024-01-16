@@ -3,6 +3,18 @@ import styles from "./index.styles.module.scss";
 
 const Experience = () => {
   const experience = [
+   {
+      company: "Publicis Sapient",
+      companyIcon: `${process.env.PUBLIC_URL}/images/places/PS-Logo.png`,
+      position: "Senior Experience Engineer",
+      description: [
+       "Completed comprehensive training program covering React.",
+       "Acquired in-depth knowledge of company policies, procedures, and industry best practices.",
+       "Prepared to apply acquired skills and contribute effectively to upcoming projects.",
+       "Proven ability to quickly grasp new concepts and technologies."
+      ],
+      date: "Jan 2024 - Present",
+    },
     {
       company: "Globallogic",
       companyIcon: `${process.env.PUBLIC_URL}/images/places/GL-Logo.png`,
