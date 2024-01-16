@@ -35,7 +35,7 @@ const Header = () => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      "Hi there , I am software Engineer currently working with GlobalLogic India. "
+                      "Hi there , I am software Engineer currently working with Publicis Sapient. "
                     )
                     .pauseFor(1000)
                     .typeString(
