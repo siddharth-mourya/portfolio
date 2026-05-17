@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import { Search } from 'lucide-react';
 import { projects } from '@/data/projects';
 
 const categories = ['All', ...Array.from(new Set(projects.map((project) => project.category)))];
@@ -11,34 +12,37 @@ export function ProjectBrowser() {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredProjects = useMemo(() => {
+    const normalizedSearch = search.toLowerCase().trim();
     return projects.filter((project) => {
       const matchesCategory = activeCategory === 'All' || project.category === activeCategory;
-      const matchesSearch = [project.title, project.description, ...project.tags].some((value) =>
-        value.toLowerCase().includes(search.toLowerCase())
-      );
+      const searchableValues = [project.title, project.description, project.category, ...project.tags, ...project.techStack, ...project.domain];
+      const matchesSearch = !normalizedSearch || searchableValues.some((value) => value.toLowerCase().includes(normalizedSearch));
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, search]);
 
   return (
     <div className="space-y-8">
-      <div className="grid gap-4 xl:grid-cols-[1.8fr_1.2fr]">
-        <input
-          value={search}
-          onChange={(event) => setSearch(event.target.value)}
-          placeholder="Search projects, domains, or technologies"
-          className="w-full rounded-3xl border border-white/10 bg-slate-950/80 px-6 py-4 text-slate-100 outline-none transition focus:border-sky-400"
-        />
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+      <div className="grid gap-4 xl:grid-cols-[1.1fr_1.4fr]">
+        <label className="relative block">
+          <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
+          <input
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder="Search projects, tech, domains..."
+            className="w-full rounded-full border border-slate-200 bg-white px-12 py-4 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+          />
+        </label>
+        <div className="flex flex-wrap gap-2">
           {categories.map((category) => (
             <button
               key={category}
               type="button"
               onClick={() => setActiveCategory(category)}
-              className={`rounded-3xl px-4 py-3 text-sm transition ${
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                 activeCategory === category
-                  ? 'bg-sky-500 text-slate-950'
-                  : 'border border-white/10 bg-slate-900/80 text-slate-200 hover:border-sky-400'
+                  ? 'bg-slate-950 text-white shadow-soft'
+                  : 'border border-slate-200 bg-white text-slate-600 hover:border-orange-200 hover:bg-orange-50 hover:text-slate-950'
               }`}
             >
               {category}
@@ -49,31 +53,23 @@ export function ProjectBrowser() {
 
       <div className="grid gap-6 xl:grid-cols-2">
         {filteredProjects.map((project) => (
-          <Link
-            key={project.id}
-            href={`/projects/${project.id}`}
-            className="group rounded-3xl border border-white/10 bg-slate-950/80 p-8 transition hover:border-sky-400"
-          >
+          <Link key={project.id} href={`/projects/${project.id}`} className="group rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
             <div className="flex items-center justify-between gap-4">
-              <p className="text-sm uppercase tracking-[0.22em] text-slate-400">{project.category}</p>
-              <span className="rounded-full bg-slate-900/90 px-3 py-1 text-xs tracking-[0.2em] text-slate-300">
-                {project.complexity}
-              </span>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-500">{project.category}</p>
+              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold tracking-[0.16em] text-slate-600">{project.complexity}</span>
             </div>
-            <h3 className="mt-5 text-2xl font-semibold text-white">{project.title}</h3>
-            <p className="mt-4 text-slate-300">{project.description}</p>
+            <h3 className="mt-5 text-2xl font-semibold text-slate-950 group-hover:text-orange-600">{project.title}</h3>
+            <p className="mt-4 leading-7 text-slate-600">{project.description}</p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span key={tag} className="rounded-full bg-slate-900/80 px-3 py-1 text-xs text-slate-300">
-                  {tag}
-                </span>
+              {project.techStack.slice(0, 7).map((tech) => (
+                <span key={tech} className="rounded-full border border-orange-100 bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700">{tech}</span>
               ))}
             </div>
           </Link>
         ))}
         {filteredProjects.length === 0 ? (
-          <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-8 text-slate-300">
-            No projects matched your search. Try adjusting the filters or search terms.
+          <div className="rounded-[2rem] border border-dashed border-orange-200 bg-orange-50 p-8 text-slate-600">
+            No projects matched your search. Try another technology, domain, or category.
           </div>
         ) : null}
       </div>

@@ -17,22 +17,23 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const postMeta = blogPosts.find((post) => post.slug === params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const postMeta = blogPosts.find((post) => post.slug === slug);
   if (!postMeta) {
     notFound();
   }
-  const PostComponent = postMap[params.slug as keyof typeof postMap];
+  const PostComponent = postMap[slug as keyof typeof postMap];
   if (!PostComponent) {
     notFound();
   }
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10 sm:px-8 lg:px-12">
+    <main className="mx-auto max-w-5xl px-5 py-10 sm:px-8 lg:px-12">
       <SectionHeading title={postMeta.title} subtitle="Blog article" description={postMeta.description} />
-      <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-10 shadow-soft">
+      <article className="prose max-w-none rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
         <PostComponent />
-      </div>
+      </article>
     </main>
   );
 }
