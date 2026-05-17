@@ -7,7 +7,7 @@ export default function ExperiencePage() {
       <SectionHeading
         title="Experience"
         subtitle="Career story"
-        description="A concise timeline of how I moved from building React and Node.js apps to shaping scalable frontend systems and product experiences."
+        description="Frontend engineering experience across enterprise automotive financing, healthcare, and EdTech products."
       />
       <ExperienceSection />
     </main>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { siteConfig } from '@/data/site';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 
 const navItems = [
   { label: 'Work', href: '/projects' },
@@ -45,6 +46,7 @@ export function SiteHeader() {
           </Link>
         </div>
       </div>
+      <Breadcrumbs />
     </header>
   );
 }
