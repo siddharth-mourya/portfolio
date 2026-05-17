@@ -1,48 +1,41 @@
-import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
+import Link from 'next/link';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
+import { siteConfig } from '@/data/site';
+
+const contactItems = [
+  { label: 'Email', value: siteConfig.email, href: `mailto:${siteConfig.email}`, icon: Mail },
+  { label: 'Location', value: siteConfig.location, href: '#', icon: MapPin },
+  { label: 'GitHub', value: 'siddharth-mourya', href: siteConfig.github, icon: Github },
+  { label: 'LinkedIn', value: 'siddharth-mourya', href: siteConfig.linkedin, icon: Linkedin }
+];
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-10 sm:px-8 lg:px-12">
-      <SectionHeading title="Contact" subtitle="Let's create the next technical milestone together." />
-
-      <section className="rounded-3xl border border-white/10 bg-slate-950/70 p-10 shadow-soft backdrop-blur-xl">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_0.7fr]">
-          <div className="space-y-6 text-slate-200">
-            <p className="leading-8 text-slate-300">
-              I am open to senior frontend, architecture, and product engineering roles. If you're building analytics dashboards, realtime apps, component libraries, or SaaS products, let's connect.
-            </p>
-            <div className="space-y-4">
-              <div className="rounded-3xl bg-slate-900/80 p-6">
-                <div className="mb-3 flex items-center gap-3 text-slate-100">
-                  <MapPin size={18} />
-                  <span className="font-semibold">Location</span>
-                </div>
-                <p className="text-slate-300">Remote-first / India</p>
+    <main className="mx-auto max-w-5xl px-5 py-10 sm:px-8 lg:px-12">
+      <SectionHeading title="Contact" subtitle="Let’s build something useful" description="I am open to frontend roles, product engineering teams, and collaborations where thoughtful UI matters." />
+      <section className="grid gap-6 rounded-[2.25rem] border border-orange-100 bg-white/80 p-6 shadow-soft sm:p-10 lg:grid-cols-[1fr_0.9fr]">
+        <div>
+          <h3 className="text-3xl font-semibold tracking-tight text-slate-950">Tell me about the interface you want to ship.</h3>
+          <p className="mt-5 leading-8 text-slate-600">I can help with React/Next.js builds, component systems, frontend architecture, dashboard UI, realtime experiences, and full-stack product delivery.</p>
+          <Link href={`mailto:${siteConfig.email}`} className="mt-8 inline-flex rounded-full bg-slate-950 px-7 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-500">
+            Email me
+          </Link>
+        </div>
+        <div className="grid gap-3">
+          {contactItems.map((item) => {
+            const Icon = item.icon;
+            const content = (
+              <div className="flex items-center gap-4 rounded-3xl border border-slate-100 bg-[#fffaf3] p-4 transition hover:bg-orange-50">
+                <span className="rounded-2xl bg-white p-3 text-orange-500 shadow-sm"><Icon size={18} /></span>
+                <span>
+                  <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">{item.label}</span>
+                  <span className="text-sm font-semibold text-slate-800">{item.value}</span>
+                </span>
               </div>
-              <div className="rounded-3xl bg-slate-900/80 p-6">
-                <div className="mb-3 flex items-center gap-3 text-slate-100">
-                  <Mail size={18} />
-                  <span className="font-semibold">Email</span>
-                </div>
-                <a href="mailto:siddharthmourya@example.com" className="text-sky-400 hover:text-sky-300">siddharthmourya@example.com</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-6 rounded-3xl bg-slate-900/80 p-8 text-slate-200 shadow-inner">
-            <h2 className="text-xl font-semibold text-white">Social profiles</h2>
-            <div className="space-y-4 text-slate-300">
-              <a href="https://github.com/siddharth-mourya" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-3xl bg-slate-950/80 p-4 transition hover:bg-slate-900">
-                <Github size={18} />
-                <span>github.com/siddharth-mourya</span>
-              </a>
-              <a href="https://linkedin.com/in/siddharth-mourya" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-3xl bg-slate-950/80 p-4 transition hover:bg-slate-900">
-                <Linkedin size={18} />
-                <span>linkedin.com/in/siddharth-mourya</span>
-              </a>
-            </div>
-          </div>
+            );
+            return item.href === '#' ? <div key={item.label}>{content}</div> : <Link key={item.label} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">{content}</Link>;
+          })}
         </div>
       </section>
     </main>

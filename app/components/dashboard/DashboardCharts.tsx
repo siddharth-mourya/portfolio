@@ -9,38 +9,39 @@ const categoryCounts = Object.entries(projects.reduce((acc, project) => {
   return acc;
 }, {} as Record<string, number>)).map(([name, value]) => ({ name, value }));
 
-const COLORS = ['#38bdf8', '#6366f1', '#38bdf8', '#0ea5e9', '#7c3aed'];
+const COLORS = ['#fb923c', '#38bdf8', '#facc15', '#34d399', '#a78bfa', '#f472b6'];
+const tooltipStyle = { backgroundColor: '#ffffff', borderRadius: 16, border: '1px solid #e2e8f0', color: '#0f172a' };
 
 export function DashboardCharts() {
   return (
     <div className="grid gap-6 xl:grid-cols-2">
-      <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6 shadow-soft">
-        <h3 className="text-lg font-semibold text-white">Skill distribution</h3>
+      <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 className="text-lg font-semibold text-slate-950">Skill confidence</h3>
         <div className="mt-6 h-72">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={skillsDistribution} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-              <CartesianGrid stroke="#1e293b" vertical={false} />
-              <XAxis dataKey="name" tick={{ fill: '#cbd5e1', fontSize: 12 }} />
-              <YAxis tick={{ fill: '#cbd5e1', fontSize: 12 }} />
-              <Tooltip wrapperStyle={{ backgroundColor: '#0f172a', borderRadius: 12, border: '1px solid #334155' }} />
-              <Bar dataKey="value" fill="#38bdf8" radius={[8, 8, 0, 0]} />
+              <CartesianGrid stroke="#e2e8f0" vertical={false} />
+              <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 12 }} />
+              <YAxis tick={{ fill: '#64748b', fontSize: 12 }} />
+              <Tooltip wrapperStyle={tooltipStyle} />
+              <Bar dataKey="value" fill="#fb923c" radius={[10, 10, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </div>
 
-      <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6 shadow-soft">
-        <h3 className="text-lg font-semibold text-white">Project categories</h3>
+      <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 className="text-lg font-semibold text-slate-950">Project categories</h3>
         <div className="mt-6 h-72">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
-              <Pie data={categoryCounts} dataKey="value" nameKey="name" innerRadius={58} outerRadius={100} fill="#7c3aed" paddingAngle={4}>
+              <Pie data={categoryCounts} dataKey="value" nameKey="name" innerRadius={58} outerRadius={100} fill="#fb923c" paddingAngle={4}>
                 {categoryCounts.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  <Cell key={`cell-${entry.name}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip wrapperStyle={{ backgroundColor: '#0f172a', borderRadius: 12, border: '1px solid #334155' }} />
-              <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ color: '#cbd5e1' }} />
+              <Tooltip wrapperStyle={tooltipStyle} />
+              <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ color: '#475569' }} />
             </PieChart>
           </ResponsiveContainer>
         </div>

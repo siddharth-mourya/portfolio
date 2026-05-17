@@ -1,19 +1,20 @@
 import Link from 'next/link';
+import { ArrowRight, Mail } from 'lucide-react';
 
 export function ContactCta() {
   return (
-    <section className="mt-14 rounded-3xl border border-white/10 bg-slate-950/70 p-10 shadow-soft backdrop-blur-xl text-center">
-      <p className="text-sm uppercase tracking-[0.24em] text-sky-400">Hire me</p>
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">Let&apos;s build your next product milestone.</h2>
+    <section className="mt-16 overflow-hidden rounded-[2.25rem] bg-slate-950 p-8 text-center text-white shadow-soft sm:p-12">
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">Hire me</p>
+      <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl">Looking for a frontend developer who can make product UI feel effortless?</h2>
       <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300">
-        I create modern frontend systems, realtime architectures, and analytics platforms that help teams move fast without compromising quality. Reach out for senior frontend engineering and product-led delivery.
+        I bring React, Next.js, TypeScript, UX detail, and full-stack awareness together to help teams ship interfaces recruiters, users, and engineering managers can trust.
       </p>
       <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-        <Link href="/contact" className="rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-400">
-          Contact me
+        <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-orange-100">
+          <Mail size={16} /> Contact me
         </Link>
-        <Link href="/resume" className="rounded-full border border-white/10 px-8 py-3 text-sm text-slate-200 transition hover:border-sky-400 hover:text-white">
-          View resume
+        <Link href="/projects" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-8 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-orange-300">
+          View work <ArrowRight size={16} />
         </Link>
       </div>
     </section>
