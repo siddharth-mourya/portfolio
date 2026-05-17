@@ -40,6 +40,7 @@ export type ExperienceItem = {
   location: string;
   summary: string;
   responsibilities: string[];
+  technologies?: string[];
 };
 
 export type BlogMeta = {

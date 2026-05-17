@@ -23,15 +23,32 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/": [
-        "./*"
+      "@/components/*": [
+        "app/components/*"
+      ],
+      "@/data/*": [
+        "app/data/*"
+      ],
+      "@/types": [
+        "app/types"
+      ],
+      "@/types/*": [
+        "app/types/*"
+      ],
+      "@/content/*": [
+        "app/content/*"
+      ],
+      "@/*": [
+        "app/*"
       ]
     },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "ignoreDeprecations": "6.0",
+    "tsBuildInfoFile": ".next/cache/tsconfig.tsbuildinfo"
   },
   "include": [
     "next-env.d.ts",
