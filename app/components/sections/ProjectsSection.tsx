@@ -18,10 +18,10 @@ export function ProjectsSection() {
       <div className="grid gap-6 xl:grid-cols-2">
         {featuredProjects.map((project, index) => (
           <Link key={project.id} href={`/projects/${project.id}`} className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
-            <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-orange-100 transition group-hover:scale-125" />
+            {/* <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-orange-100 transition group-hover:scale-125" /> */}
             <div className="relative flex items-center justify-between gap-4">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">0{index + 1} • {project.category}</p>
-              <span className="rounded-full bg-slate-950 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">{project.complexity}</span>
+              {/* <span className="rounded-full bg-slate-950 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">{project.complexity}</span> */}
             </div>
             <h3 className="relative mt-5 text-2xl font-semibold text-slate-950">{project.title}</h3>
             <p className="relative mt-4 leading-7 text-slate-600">{project.description}</p>
