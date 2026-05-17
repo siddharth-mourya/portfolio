@@ -285,3 +285,267 @@ A React-based UI recreation of Gmail's interface, demonstrating advanced React c
 - Real-time device status tracking
 
 ---
+
+### 7. **Chat Application UI – Vibechat**
+
+**Status:** Frontend Project
+**Repository:** [vibechat-ui](https://github.com/siddharth-mourya/vibechat-ui)
+
+#### Project Overview
+
+A modern and responsive chat application UI built using React and Vite. The project focuses on creating a clean messaging experience with reusable components and mobile-friendly layouts.
+
+#### Technical Stack
+
+**Frontend (React + Vite + Bootstrap)**
+
+* **Framework:** React 18.2.0
+* **Build Tool:** Vite 4.4.0
+* **UI Library:** React Bootstrap 2.8.0, Bootstrap 5.3.0
+* **Routing:** React Router DOM 6.14.1
+* **Styling:** SASS 1.63.6
+* **Code Quality:** ESLint with React Hooks support
+
+#### Key Features
+
+* User chat list view
+* Conversation display panel
+* Message input area
+* Fully responsive layout
+* Reusable component-based architecture
+
+#### Styling Approach
+
+* SASS variables and mixins
+* Bootstrap utility classes
+* Custom component-level styling
+
+---
+
+### 8. **Next.js Blog Platform**
+
+**Status:** Full-Stack Frontend Project
+**Repository:** [NextBlog](https://github.com/siddharth-mourya/NextBlog)
+
+#### Project Overview
+
+A blog platform built with Next.js and TypeScript, leveraging server-side rendering and static site generation for high performance and SEO optimization.
+
+#### Technical Stack
+
+* **Framework:** Next.js 14.0.4
+* **Language:** TypeScript
+* **Styling:** CSS Modules and Tailwind CSS
+* **Code Quality:** ESLint with Next.js rules
+
+#### Key Features
+
+* Server-side rendering (SSR)
+* Static site generation (SSG)
+* Blog post management
+* Responsive design
+* Type-safe development
+
+#### Use Cases
+
+* Blogging platform
+* Content management system
+* SEO-optimized websites
+
+---
+
+### 9. **Smartwatch Toggle Device**
+
+**Status:** IoT Dashboard
+**Repository:** [toggle](https://github.com/siddharth-mourya/toggle)
+
+#### Project Overview
+
+A device control dashboard built with Next.js and MongoDB for interacting with smartwatch-like IoT devices.
+
+#### Technical Stack
+
+* **Framework:** Next.js 14.2.9
+* **Database:** MongoDB with Mongoose
+
+#### Key Features
+
+* Device control interface
+* Real-time status updates
+* Dashboard-based interaction
+
+---
+
+### 10. **PyDictionary**
+
+**Status:** Educational Project
+**Repository:** [PyDictionary](https://github.com/siddharth-mourya/PyDictionary)
+
+#### Project Overview
+
+A Python-based utility demonstrating domain filtering and website blocking using system-level programming concepts.
+
+#### Key Features
+
+* Website blocking functionality
+* Domain filtering
+* Basic network management
+
+#### Concepts Demonstrated
+
+* Python scripting
+* File handling
+* System automation
+
+---
+
+### 11. **Maze Solver – Line Follower Robot**
+
+**Status:** Open Source Project
+**Repository:** [MazeSolver-LineFollower](https://github.com/siddharth-mourya/MazeSolver-LineFollower)
+
+#### Project Overview
+
+An Arduino-powered autonomous robot that navigates mazes by following white lines using infrared sensor feedback.
+
+#### Technical Stack
+
+* **Language:** C++
+* **Microcontroller:** Arduino Uno
+* **Sensors:** 6 IR sensors
+
+#### Key Features
+
+* Autonomous maze navigation
+* Real-time sensor processing
+* Adaptive motor control
+* Reliable line tracking
+
+#### Technical Concepts Demonstrated
+
+* Embedded systems programming
+* Sensor interfacing
+* Robotics fundamentals
+* Real-time decision making
+
+#### Impact
+
+* 3 GitHub stars
+* 3 GitHub forks
+
+---
+
+### 12. **CrasherGame**
+
+**Status:** Portfolio Project
+**Repository:** [CrasherGame](https://github.com/siddharth-mourya/CrasherGame)
+
+#### Project Overview
+
+A 2D car racing game built with Python and Pygame featuring obstacle generation, collision detection, and score tracking.
+
+#### Technical Stack
+
+* **Language:** Python
+* **Framework:** Pygame
+
+#### Key Features
+
+* Car controls
+* Obstacle generation
+* Collision detection
+* Score management
+* Game state transitions
+
+#### Learning Outcomes
+
+* Event-driven programming
+* Physics simulation
+* Sprite management
+
+---
+
+### 13. **Gameo – Gaming Aggregator**
+
+**Status:** Hackathon Project
+**Repository:** [Gameo](https://github.com/siddharth-mourya/Gameo)
+
+#### Project Overview
+
+A gaming aggregator website that fetches and displays game data, news, and recommendations using external APIs.
+
+#### Technical Stack
+
+* HTML
+* CSS
+* JavaScript
+* External Gaming APIs
+
+#### Key Features
+
+* Game score display
+* Release date information
+* News aggregation
+* Recommendation engine
+
+#### Technologies Demonstrated
+
+* API integration
+* JSON parsing
+* DOM manipulation
+
+---
+
+### 14. **Painter Application**
+
+**Status:** Educational Desktop Application
+**Repository:** [Painter](https://github.com/siddharth-mourya/Painter)
+
+#### Project Overview
+
+A desktop painting application built with C++ featuring drawing tools and canvas management.
+
+#### Key Features
+
+* Drawing tools
+* Color selection
+* Save/load functionality
+
+---
+
+### 15. **Business Design Website**
+
+**Status:** Static Website
+**Repository:** [businessDesign](https://github.com/siddharth-mourya/businessDesign)
+
+#### Project Overview
+
+A professional business website showcasing services, branding, and portfolio information.
+
+#### Components
+
+* Landing page
+* Services section
+* Portfolio showcase
+* Contact section
+
+---
+
+### 16. **Coming Soon Page**
+
+**Status:** Reusable Template
+**Repository:** [Coming-soon-page](https://github.com/siddharth-mourya/Coming-soon-page)
+
+#### Project Overview
+
+A customizable coming soon landing page template with countdown timer and email subscription support.
+
+#### Key Features
+
+* Countdown timer
+* Email subscription form
+* Social links
+* Responsive design
+
+---
+
