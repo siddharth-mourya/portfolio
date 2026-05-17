@@ -12,7 +12,7 @@ export function ExperienceSection() {
           <path className="story-line" d="M20 0 C45 160 -5 260 20 420 C45 580 -5 680 20 860" stroke="#fb923c" strokeWidth="3" strokeLinecap="round" />
         </svg>
         {experienceTimeline.map((item) => (
-          <div key={item.title} className="relative rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm md:ml-16">
+          <div key={`${item.company}-${item.date}`} className="relative rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm md:ml-16">
             <span className="absolute -left-[3.25rem] top-8 hidden h-5 w-5 rounded-full border-4 border-white bg-orange-400 shadow-soft md:block" />
             <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
               <div>
@@ -25,11 +25,24 @@ export function ExperienceSection() {
                 <p>{item.location}</p>
               </div>
             </div>
-            <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
-              {item.responsibilities.map((responsibility) => (
-                <li key={responsibility} className="rounded-2xl bg-slate-50 p-4">{responsibility}</li>
-              ))}
-            </ul>
+            <div className="mt-6 space-y-3">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Key contributions</p>
+              <ul className="grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
+                {item.responsibilities.map((responsibility) => (
+                  <li key={responsibility} className="rounded-2xl bg-slate-50 p-4">{responsibility}</li>
+                ))}
+              </ul>
+            </div>
+            {item.technologies ? (
+              <div className="mt-6 space-y-3">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Technologies used</p>
+                <div className="flex flex-wrap gap-2">
+                  {item.technologies.map((technology) => (
+                    <span key={technology} className="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-slate-700">{technology}</span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </div>
         ))}
       </div>
