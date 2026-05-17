@@ -820,7 +820,7 @@ A comprehensive documentation site built with Docusaurus for senior-level fronte
 npm run dev      # Development mode
 npm start        # Production server
 npm run build    # Full-stack build
-
+```
 
 ### 20. **Painter – C++ Desktop Application**
 
