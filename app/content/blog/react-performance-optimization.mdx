@@ -1,0 +1,25 @@
+---
+title: React Performance Optimization for Production Applications
+date: 2026-05-17
+---
+
+# React Performance Optimization for Production Applications
+
+Building performant React applications is essential for modern products. I focus on reducing bundle weight, minimizing re-renders, and optimizing user experience across devices.
+
+## Key strategies
+
+- Use memoization with `React.memo`, `useMemo`, and `useCallback` when components rely on stable inputs.
+- Split code with dynamic imports and route-level lazy loading.
+- Prefer browser-native APIs and CSS transitions over heavy runtime animations.
+- Monitor Core Web Vitals and prioritize Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS).
+
+## Practical examples
+
+1. Optimize list rendering with stable keys and virtualization.
+2. Keep component trees shallow and split large pages into focused sections.
+3. Use `next/image` or optimized image delivery to reduce layout shifts.
+
+## Outcome
+
+Performance is not just speed — it is how fast users can complete tasks. The right architecture keeps React apps fast while maintaining developer productivity.
