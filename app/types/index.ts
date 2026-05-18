@@ -8,7 +8,11 @@ export type ProjectCategory =
   | 'Game Development'
   | 'Documentation & Learning'
   | 'Templates & UI Mockups'
-  | 'Mobile Applications';
+  | 'API & Developer Tools'
+  | 'Business & E-commerce'
+  | 'Desktop Applications'
+  | 'Educational Repositories'
+  | 'Productivity & Utilities';
 
 export type Project = {
   id: string;
