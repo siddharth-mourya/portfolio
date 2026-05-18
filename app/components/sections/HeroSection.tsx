@@ -43,7 +43,7 @@ export function HeroSection() {
         <div className="relative mx-auto w-full max-w-xl">
           <div className="floaty relative rounded-[2rem] border border-slate-200 bg-white p-4 shadow-soft">
             <div className="overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-orange-100 via-white to-sky-100 p-4">
-              <Image src="/images/profile/profile-pic.jpeg" alt="Siddharth Mourya" width={640} height={760} priority className="aspect-[4/5] rounded-[1.25rem] object-cover grayscale-[12%]" />
+              <Image src="/images/profile/profile-pic.png" alt="Siddharth Mourya" width={640} height={760} priority className="aspect-[4/5] rounded-[1.25rem] object-cover grayscale-[12%]" />
             </div>
           </div>
           <div className="absolute -bottom-5 -left-3 rounded-3xl border border-orange-100 bg-white/95 p-5 shadow-soft sm:-left-8">
