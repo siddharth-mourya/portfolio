@@ -23,7 +23,7 @@ export function ProjectBrowser() {
 
   return (
     <div className="space-y-8">
-      <div className="grid gap-4 xl:grid-cols-[1.1fr_1.4fr]">
+      <div className="flex flex-col gap-4">
         <label className="relative block">
           <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
           <input
