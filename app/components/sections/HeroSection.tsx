@@ -57,14 +57,14 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      {/* <div className="relative mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {metrics.map((metric) => (
           <div key={metric.label} className="rounded-3xl border border-slate-100 bg-white/75 p-5 shadow-sm">
             <p className="text-3xl font-semibold text-slate-950">{metric.value}</p>
             <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{metric.label}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

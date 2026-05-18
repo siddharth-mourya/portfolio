@@ -1,293 +1,310 @@
-import type { Project } from '@/types';
+import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: 'powerlytics-suite',
-    title: 'Powerlytics Suite',
+    id: "powerlytics-suite",
+    title: "Powerlytics Suite",
     description:
-      'A full-stack energy analytics platform with realtime dashboards, reporting, and secure role-based access for energy management teams.',
-    status: 'Active Development',
-    repo: 'https://github.com/siddharth-mourya/powerlytic-ui',
-    backendRepo: 'https://github.com/siddharth-mourya/powerlytic-be',
-    liveUrl: 'https://powerlytic-ui.vercel.app',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Express', 'MongoDB', 'JWT', 'Mongoose'],
+      "A full-stack energy analytics platform with realtime dashboards, reporting, and secure role-based access for energy management teams.",
+    status: "Active Development",
+    repo: "https://github.com/siddharth-mourya/powerlytic-ui",
+    backendRepo: "https://github.com/siddharth-mourya/powerlytic-be",
+    liveUrl: "https://powerlytic-ui.vercel.app",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Mongoose",
+    ],
     features: [
-      'Realtime energy reporting and analytics panels',
-      'JWT authentication and admin seed workflows',
-      'Graph-driven dashboards with optimized performance',
-      'Backend input validation and structured logging'
+      "Realtime energy reporting and analytics panels",
+      "JWT authentication and admin seed workflows",
+      "Graph-driven dashboards with optimized performance",
+      "Backend input validation and structured logging",
     ],
     responsibilities: [
-      'Designed end-to-end architecture for frontend and backend',
-      'Built reusable UI components and admin interfaces',
-      'Implemented secure authentication and validation flows',
-      'Optimized API performance for live data updates'
+      "Designed end-to-end architecture for frontend and backend",
+      "Built reusable UI components and admin interfaces",
+      "Implemented secure authentication and validation flows",
+      "Optimized API performance for live data updates",
     ],
     impact: [
-      'Production-ready energy analytics platform',
-      'Deployed on Vercel with scalable Next.js architecture',
-      'Active maintenance across frontend and backend repositories'
+      "Production-ready energy analytics platform",
+      "Deployed on Vercel with scalable Next.js architecture",
+      "Active maintenance across frontend and backend repositories",
     ],
-    category: 'Full-Stack Applications',
-    tags: ['analytics', 'energy', 'dashboard', 'typescript', 'nextjs'],
-    domain: ['Analytics', 'Energy Management'],
-    complexity: 'High'
+    category: "Full-Stack Applications",
+    tags: ["analytics", "energy", "dashboard", "typescript", "nextjs"],
+    domain: ["Analytics", "Energy Management"],
+    complexity: "High",
   },
   {
-    id: 'real-time-chat-application',
-    title: 'Real-Time Chat Application',
+    id: "real-time-chat-application",
+    title: "Real-Time Chat Application",
     description:
-      'A realtime messaging platform with persistent chat history, authentication, presence tracking, and socket-based delivery.',
-    status: 'Production-Ready',
-    repo: 'https://github.com/siddharth-mourya/chatApp',
-    techStack: ['React', 'Vite', 'Zustand', 'Socket.io', 'Express', 'MongoDB', 'JWT'],
+      "A realtime messaging platform with persistent chat history, authentication, presence tracking, and socket-based delivery.",
+    status: "Production-Ready",
+    repo: "https://github.com/siddharth-mourya/chatApp",
+    techStack: [
+      "React",
+      "Vite",
+      "Zustand",
+      "Socket.io",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
     features: [
-      'Bidirectional realtime messaging with Socket.io',
-      'User authentication and secure session management',
-      'Persistent chat history and message retrieval',
-      'Online/offline status and user discovery'
+      "Bidirectional realtime messaging with Socket.io",
+      "User authentication and secure session management",
+      "Persistent chat history and message retrieval",
+      "Online/offline status and user discovery",
     ],
     responsibilities: [
-      'Led realtime architecture and socket integration',
-      'Built frontend state management around chat workflows',
-      'Designed backend routes for messaging and user APIs',
-      'Implemented UX patterns for responsive chat interactions'
+      "Led realtime architecture and socket integration",
+      "Built frontend state management around chat workflows",
+      "Designed backend routes for messaging and user APIs",
+      "Implemented UX patterns for responsive chat interactions",
     ],
     impact: [
-      'Delivered a full-stack realtime collaboration experience',
-      'Showcased scalable socket infrastructure and chat flows',
-      'Demonstrated production-grade auth and persistence'
+      "Delivered a full-stack realtime collaboration experience",
+      "Showcased scalable socket infrastructure and chat flows",
+      "Demonstrated production-grade auth and persistence",
     ],
-    category: 'Real-Time Applications',
-    tags: ['realtime', 'chat', 'socket', 'fullstack', 'mongodb'],
-    domain: ['Chat Applications', 'Collaboration'],
-    complexity: 'High'
+    category: "Real-Time Applications",
+    tags: ["realtime", "chat", "socket", "fullstack", "mongodb"],
+    domain: ["Chat Applications", "Collaboration"],
+    complexity: "High",
   },
   {
-    id: 'url-shortener-service',
-    title: 'URL Shortener Service',
+    id: "url-shortener-service",
+    title: "URL Shortener Service",
     description:
-      'A RESTful API for generating and redirecting short URLs with click tracking and validation.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/url-shortner',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'shortid', 'CORS'],
+      "A RESTful API for generating and redirecting short URLs with click tracking and validation.",
+    status: "Complete",
+    repo: "https://github.com/siddharth-mourya/url-shortner",
+    techStack: ["Node.js", "Express", "MongoDB", "Mongoose", "shortid", "CORS"],
     features: [
-      'Short URL generation with duplicate prevention',
-      'Redirect endpoint for original URL retrieval',
-      'Click analytics and timestamp tracking',
-      'URL validation and error handling for production stability'
+      "Short URL generation with duplicate prevention",
+      "Redirect endpoint for original URL retrieval",
+      "Click analytics and timestamp tracking",
+      "URL validation and error handling for production stability",
     ],
     responsibilities: [
-      'Built backend API and redirection logic',
-      'Designed database schema for analytics and link storage',
-      'Implemented robust validation and security checks',
-      'Maintained documentation and deployment workflow'
+      "Built backend API and redirection logic",
+      "Designed database schema for analytics and link storage",
+      "Implemented robust validation and security checks",
+      "Maintained documentation and deployment workflow",
     ],
     impact: [
-      'Delivered a reusable URL service for integration',
-      'Optimized link handling and response performance',
-      'Demonstrated backend service design for developer tools'
+      "Delivered a reusable URL service for integration",
+      "Optimized link handling and response performance",
+      "Demonstrated backend service design for developer tools",
     ],
-    category: 'Backend Services',
-    tags: ['api', 'urls', 'backend', 'express', 'mongodb'],
-    domain: ['Developer Tools', 'Backend Services'],
-    complexity: 'Medium'
+    category: "Backend Services",
+    tags: ["api", "urls", "backend", "express", "mongodb"],
+    domain: ["Developer Tools", "Backend Services"],
+    complexity: "Medium",
   },
   {
-    id: 'gmail-ui-clone',
-    title: 'Gmail UI Clone',
+    id: "gmail-ui-clone",
+    title: "Gmail UI Clone",
     description:
-      'A polished frontend recreation of Gmail’s interface, built to showcase component reuse, responsive layout, and advanced UI patterns.',
-    status: 'Portfolio Project',
-    repo: 'https://github.com/siddharth-mourya/gmail-ui',
-    techStack: ['React', 'Bootstrap', 'SASS', 'FontAwesome'],
+      "A polished frontend recreation of Gmail’s interface, built to showcase component reuse, responsive layout, and advanced UI patterns.",
+    status: "Portfolio Project",
+    repo: "https://github.com/siddharth-mourya/gmail-ui",
+    techStack: ["React", "Bootstrap", "SASS", "FontAwesome"],
     features: [
-      'Email list view with preview and responsive sidebar',
-      'Compose UI, search component, and message navigation',
-      'Mobile-friendly layout with Bootstrap grid',
-      'Advanced styling with SASS mixins and variables'
+      "Email list view with preview and responsive sidebar",
+      "Compose UI, search component, and message navigation",
+      "Mobile-friendly layout with Bootstrap grid",
+      "Advanced styling with SASS mixins and variables",
     ],
     responsibilities: [
-      'Built modular components and layout system',
-      'Implemented responsive navigation and detail views',
-      'Produced a reusable design system for email interfaces',
-      'Demonstrated UI craftsmanship for SaaS-style products'
+      "Built modular components and layout system",
+      "Implemented responsive navigation and detail views",
+      "Produced a reusable design system for email interfaces",
+      "Demonstrated UI craftsmanship for SaaS-style products",
     ],
     impact: [
-      'Showcased frontend design and interaction capabilities',
-      'Demonstrated polished UI execution with Bootstrap and Sass'
+      "Showcased frontend design and interaction capabilities",
+      "Demonstrated polished UI execution with Bootstrap and Sass",
     ],
-    category: 'Frontend Applications',
-    tags: ['ui', 'react', 'bootstrap', 'sass', 'design'],
-    domain: ['UI Mockups', 'Frontend Applications'],
-    complexity: 'Medium'
+    category: "Frontend Applications",
+    tags: ["ui", "react", "bootstrap", "sass", "design"],
+    domain: ["UI Mockups", "Frontend Applications"],
+    complexity: "Medium",
   },
   {
-    id: 'frontend-tauji',
-    title: 'Senior Frontend Interview Preparation',
+    id: "frontend-tauji",
+    title: "Senior Frontend Interview Preparation",
     description:
-      'A Docusaurus-based knowledge platform for senior frontend interview preparation and architectural learning.',
-    status: 'Active Documentation',
-    repo: 'https://github.com/siddharth-mourya/frontend-tauji',
-    techStack: ['Docusaurus', 'TypeScript', 'CSS'],
+      "A Docusaurus-based knowledge platform for senior frontend interview preparation and architectural learning.",
+    status: "Active Documentation",
+    repo: "https://github.com/siddharth-mourya/frontend-tauji",
+    techStack: ["Docusaurus", "TypeScript", "CSS"],
     features: [
-      'Structured learning paths for frontend architecture',
-      'Search-ready documentation with dark mode support',
-      'Code examples and interview concept walkthroughs',
-      'Responsive design for desktop and mobile learning'
+      "Structured learning paths for frontend architecture",
+      "Search-ready documentation with dark mode support",
+      "Code examples and interview concept walkthroughs",
+      "Responsive design for desktop and mobile learning",
     ],
     responsibilities: [
-      'Designed documentation architecture and topic hierarchy',
-      'Curated senior frontend concepts and engineering patterns',
-      'Built a developer-friendly learning experience',
-      'Maintained production-ready deployment configuration'
+      "Designed documentation architecture and topic hierarchy",
+      "Curated senior frontend concepts and engineering patterns",
+      "Built a developer-friendly learning experience",
+      "Maintained production-ready deployment configuration",
     ],
     impact: [
-      'Published a high-value learning resource for frontend engineers',
-      'Demonstrated domain expertise in architecture and teaching'
+      "Published a high-value learning resource for frontend engineers",
+      "Demonstrated domain expertise in architecture and teaching",
     ],
-    category: 'Documentation & Learning',
-    tags: ['learning', 'documentation', 'frontend', 'typescript'],
-    domain: ['Learning Platforms', 'Documentation'],
-    complexity: 'Medium'
+    category: "Documentation & Learning",
+    tags: ["learning", "documentation", "frontend", "typescript"],
+    domain: ["Learning Platforms", "Documentation"],
+    complexity: "Medium",
   },
   {
-    id: 'switch-iot-platform-backend',
-    title: 'Switch IoT Platform Backend',
+    id: "switch-iot-platform-backend",
+    title: "Switch IoT Platform Backend",
     description:
-      'Backend services for an IoT platform, including device registration, telemetry ingestion, and structured logging for device management.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/switch-be',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Winston', 'express-validator'],
+      "Backend services for an IoT platform, including device registration, telemetry ingestion, and structured logging for device management.",
+    status: "Complete",
+    repo: "https://github.com/siddharth-mourya/switch-be",
+    techStack: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Winston",
+      "express-validator",
+    ],
     features: [
-      'Device registration and command orchestration APIs',
-      'Telemetry storage with validation and error handling',
-      'Structured Winston logging for monitoring',
-      'Environment-driven configuration and production readiness'
+      "Device registration and command orchestration APIs",
+      "Telemetry storage with validation and error handling",
+      "Structured Winston logging for monitoring",
+      "Environment-driven configuration and production readiness",
     ],
     responsibilities: [
-      'Built IoT device backend architecture',
-      'Implemented validation and monitoring middleware',
-      'Designed reliable telemetry pipelines',
-      'Maintained production-grade deployment practices'
+      "Built IoT device backend architecture",
+      "Implemented validation and monitoring middleware",
+      "Designed reliable telemetry pipelines",
+      "Maintained production-grade deployment practices",
     ],
     impact: [
-      'Delivered a resilient backend for IoT device management',
-      'Proved ability to build infrastructure for embedded systems'
+      "Delivered a resilient backend for IoT device management",
+      "Proved ability to build infrastructure for embedded systems",
     ],
-    category: 'IoT & Embedded Systems',
-    tags: ['iot', 'backend', 'devices', 'logging'],
-    domain: ['IoT', 'Embedded Systems'],
-    complexity: 'High'
+    category: "IoT & Embedded Systems",
+    tags: ["iot", "backend", "devices", "logging"],
+    domain: ["IoT", "Embedded Systems"],
+    complexity: "High",
   },
   {
-    id: 'vibechat-ui',
-    title: 'Chat Application UI - Vibechat',
+    id: "vibechat-ui",
+    title: "Chat Application UI - Vibechat",
     description:
-      'A frontend chat experience built with React and Bootstrap to demonstrate responsive realtime messaging interfaces and stateful UI patterns.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/vibechat-ui',
-    techStack: ['React', 'Bootstrap', 'Vite', 'SASS', 'React Router'],
+      "A frontend chat experience built with React and Bootstrap to demonstrate responsive realtime messaging interfaces and stateful UI patterns.",
+    status: "Complete",
+    repo: "https://github.com/siddharth-mourya/vibechat-ui",
+    techStack: ["React", "Bootstrap", "Vite", "SASS", "React Router"],
     features: [
-      'Chat list interface with avatars and status indicators',
-      'Responsive conversation view and message input UI',
-      'Searchable contacts and realtime-style interface flows',
-      'Mobile-first layout built with Bootstrap and SASS'
+      "Chat list interface with avatars and status indicators",
+      "Responsive conversation view and message input UI",
+      "Searchable contacts and realtime-style interface flows",
+      "Mobile-first layout built with Bootstrap and SASS",
     ],
     responsibilities: [
-      'Crafted frontend chat UX and component system',
-      'Built responsive navigation and stateful presentation',
-      'Demonstrated polished UI behavior for messaging apps'
+      "Crafted frontend chat UX and component system",
+      "Built responsive navigation and stateful presentation",
+      "Demonstrated polished UI behavior for messaging apps",
     ],
-    impact: [
-      'Showcased chat-centric interface design and responsiveness'
-    ],
-    category: 'Frontend Applications',
-    tags: ['chat', 'ui', 'react', 'bootstrap'],
-    domain: ['Chat Applications', 'Frontend'],
-    complexity: 'Medium'
+    impact: ["Showcased chat-centric interface design and responsiveness"],
+    category: "Frontend Applications",
+    tags: ["chat", "ui", "react", "bootstrap"],
+    domain: ["Chat Applications", "Frontend"],
+    complexity: "Medium",
   },
   {
-    id: 'nextjs-blog-platform',
-    title: 'Next.js Blog Platform',
+    id: "nextjs-blog-platform",
+    title: "Next.js Blog Platform",
     description:
-      'A content platform built with Next.js and Tailwind CSS to support SEO-driven blog articles and static site generation.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/NextBlog',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ESLint'],
+      "A content platform built with Next.js and Tailwind CSS to support SEO-driven blog articles and static site generation.",
+    status: "Complete",
+    repo: "https://github.com/siddharth-mourya/NextBlog",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "ESLint"],
     features: [
-      'SEO-friendly server-side rendering and static generation',
-      'Responsive blog listing and content layout',
-      'Type-safe developer experience with Next.js and TypeScript',
-      'Performance-focused build and deployment configuration'
+      "SEO-friendly server-side rendering and static generation",
+      "Responsive blog listing and content layout",
+      "Type-safe developer experience with Next.js and TypeScript",
+      "Performance-focused build and deployment configuration",
     ],
     responsibilities: [
-      'Built platform architecture for markdown-driven publishing',
-      'Implemented static generation for performance and SEO',
-      'Designed reusable layout components for content pages'
+      "Built platform architecture for markdown-driven publishing",
+      "Implemented static generation for performance and SEO",
+      "Designed reusable layout components for content pages",
     ],
-    impact: [
-      'Delivered a production-ready blog and documentation platform'
-    ],
-    category: 'Frontend Applications',
-    tags: ['nextjs', 'blog', 'seo', 'static'],
-    domain: ['Content Platforms', 'Documentation'],
-    complexity: 'Medium'
+    impact: ["Delivered a production-ready blog and documentation platform"],
+    category: "Frontend Applications",
+    tags: ["nextjs", "blog", "seo", "static"],
+    domain: ["Content Platforms", "Documentation"],
+    complexity: "Medium",
   },
   {
-    id: 'in-time-app',
-    title: 'In-Time - Time Management App',
+    id: "in-time-app",
+    title: "In-Time - Time Management App",
     description:
-      'A personal productivity and planning application built with Next.js to support schedule management and time tracking.',
-    status: 'Active Development',
-    repo: 'https://github.com/siddharth-mourya/in-time',
-    techStack: ['Next.js', 'TypeScript', 'SASS', 'moment'],
+      "A personal productivity and planning application built with Next.js to support schedule management and time tracking.",
+    status: "Active Development",
+    repo: "https://github.com/siddharth-mourya/in-time",
+    techStack: ["Next.js", "TypeScript", "SASS", "moment"],
     features: [
-      'Time and schedule management workflows',
-      'Custom hooks for reusable date utilities',
-      'Responsive interface with modern UI patterns',
-      'Optimized build setup using Turbopack'
+      "Time and schedule management workflows",
+      "Custom hooks for reusable date utilities",
+      "Responsive interface with modern UI patterns",
+      "Optimized build setup using Turbopack",
     ],
     responsibilities: [
-      'Designed frontend architecture for time management',
-      'Built reusable hooks and interaction patterns',
-      'Ensured responsive experience across devices'
+      "Designed frontend architecture for time management",
+      "Built reusable hooks and interaction patterns",
+      "Ensured responsive experience across devices",
     ],
-    impact: [
-      'Demonstrated modern React and performance-focused delivery'
-    ],
-    category: 'Frontend Applications',
-    tags: ['productivity', 'nextjs', 'typescript'],
-    domain: ['Productivity', 'Frontend'],
-    complexity: 'Medium'
+    impact: ["Demonstrated modern React and performance-focused delivery"],
+    category: "Frontend Applications",
+    tags: ["productivity", "nextjs", "typescript"],
+    domain: ["Productivity", "Frontend"],
+    complexity: "Medium",
   },
   {
-    id: 'ui-components-library',
-    title: 'UI Components Library',
+    id: "ui-components-library",
+    title: "UI Components Library",
     description:
-      'A reusable frontend component library built with modern React, TypeScript, and design system principles.',
-    status: 'Active Development',
-    repo: 'https://github.com/siddharth-mourya/ui-components',
-    techStack: ['Next.js', 'React', 'TypeScript', 'Turbopack'],
+      "A reusable frontend component library built with modern React, TypeScript, and design system principles.",
+    status: "Active Development",
+    repo: "https://github.com/siddharth-mourya/ui-components",
+    techStack: ["Next.js", "React", "TypeScript", "Turbopack"],
     features: [
-      'Reusable buttons, forms, modals, and layout primitives',
-      'Design system focused on consistency and accessibility',
-      'Fast build and iteration with Turbopack',
-      'Type-safe component props and documentation-ready patterns'
+      "Reusable buttons, forms, modals, and layout primitives",
+      "Design system focused on consistency and accessibility",
+      "Fast build and iteration with Turbopack",
+      "Type-safe component props and documentation-ready patterns",
     ],
     responsibilities: [
-      'Built a shared UI component library for multiple projects',
-      'Defined visual system and accessibility behavior',
-      'Enabled design consistency across product teams'
+      "Built a shared UI component library for multiple projects",
+      "Defined visual system and accessibility behavior",
+      "Enabled design consistency across product teams",
     ],
-    impact: [
-      'Created a scalable component foundation for future products'
-    ],
-    category: 'UI Components',
-    tags: ['design-system', 'components', 'typescript'],
-    domain: ['Component Libraries', 'Frontend'],
-    complexity: 'High'
-  }
+    impact: ["Created a scalable component foundation for future products"],
+    category: "UI Components",
+    tags: ["design-system", "components", "typescript"],
+    domain: ["Component Libraries", "Frontend"],
+    complexity: "High",
+  },
 ];
 
-export const featuredProjects = projects.filter((project) => project.category !== 'Documentation & Learning').slice(0, 6);
+export const featuredProjects = projects
+  .filter((project) => project.category !== "Documentation & Learning")
+  .slice(0, 6);

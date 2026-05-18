@@ -15,7 +15,13 @@ export const skillCategories: SkillCategory[] = [
   {
     category: 'Frameworks & Libraries',
     skills: [
+      {name: 'Next.js' },
       { name: 'React' },
+      {name: 'Redux & Zustand' },
+      {name: 'Node.js' },
+      {name: 'React Query' },
+      {name: 'graphql'},
+      {name: 'styled-components'},
       { name: 'Next.js' },
       { name: 'Express.js' },
       { name: 'Socket.io' },
@@ -40,7 +46,13 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Git' },
       { name: 'ESLint' },
       { name: 'Prettier' },
-      { name: 'VS Code' }
+      { name: 'VS Code' },
+      {name: 'Postman'},
+      {name: 'storybook'},
+      {name: 'jest'},
+      {name: 'nx'},
+      { name: 'AEM' },
+      {name: 'docusaurus'},
     ]
   }
 ];
