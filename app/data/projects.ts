@@ -123,64 +123,6 @@ export const projects: Project[] = [
     complexity: 'Medium'
   },
   {
-    id: 'frontend-tauji',
-    title: 'Senior Frontend Interview Preparation',
-    description:
-      'A Docusaurus-based knowledge platform for senior frontend interview preparation and architectural learning.',
-    status: 'Active Documentation',
-    repo: 'https://github.com/siddharth-mourya/frontend-tauji',
-    techStack: ['Docusaurus', 'TypeScript', 'CSS'],
-    features: [
-      'Structured learning paths for frontend architecture',
-      'Search-ready documentation with dark mode support',
-      'Code examples and interview concept walkthroughs',
-      'Responsive design for desktop and mobile learning'
-    ],
-    responsibilities: [
-      'Designed documentation architecture and topic hierarchy',
-      'Curated senior frontend concepts and engineering patterns',
-      'Built a developer-friendly learning experience',
-      'Maintained production-ready deployment configuration'
-    ],
-    impact: [
-      'Published a high-value learning resource for frontend engineers',
-      'Demonstrated domain expertise in architecture and teaching'
-    ],
-    category: 'Documentation & Learning',
-    tags: ['learning', 'documentation', 'frontend', 'typescript'],
-    domain: ['Learning Platforms', 'Documentation'],
-    complexity: 'Medium'
-  },
-  {
-    id: 'switch-iot-platform-backend',
-    title: 'Switch IoT Platform Backend',
-    description:
-      'Backend services for an IoT platform, including device registration, telemetry ingestion, and structured logging for device management.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/switch-be',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Winston', 'express-validator'],
-    features: [
-      'Device registration and command orchestration APIs',
-      'Telemetry storage with validation and error handling',
-      'Structured Winston logging for monitoring',
-      'Environment-driven configuration and production readiness'
-    ],
-    responsibilities: [
-      'Built IoT device backend architecture',
-      'Implemented validation and monitoring middleware',
-      'Designed reliable telemetry pipelines',
-      'Maintained production-grade deployment practices'
-    ],
-    impact: [
-      'Delivered a resilient backend for IoT device management',
-      'Proved ability to build infrastructure for embedded systems'
-    ],
-    category: 'IoT & Embedded Systems',
-    tags: ['iot', 'backend', 'devices', 'logging'],
-    domain: ['IoT', 'Embedded Systems'],
-    complexity: 'High'
-  },
-  {
     id: 'vibechat-ui',
     title: 'Chat Application UI - Vibechat',
     description:
@@ -208,37 +150,10 @@ export const projects: Project[] = [
     complexity: 'Medium'
   },
   {
-    id: 'nextjs-blog-platform',
-    title: 'Next.js Blog Platform',
-    description:
-      'A content platform built with Next.js and Tailwind CSS to support SEO-driven blog articles and static site generation.',
-    status: 'Complete',
-    repo: 'https://github.com/siddharth-mourya/NextBlog',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ESLint'],
-    features: [
-      'SEO-friendly server-side rendering and static generation',
-      'Responsive blog listing and content layout',
-      'Type-safe developer experience with Next.js and TypeScript',
-      'Performance-focused build and deployment configuration'
-    ],
-    responsibilities: [
-      'Built platform architecture for markdown-driven publishing',
-      'Implemented static generation for performance and SEO',
-      'Designed reusable layout components for content pages'
-    ],
-    impact: [
-      'Delivered a production-ready blog and documentation platform'
-    ],
-    category: 'Frontend Applications',
-    tags: ['nextjs', 'blog', 'seo', 'static'],
-    domain: ['Content Platforms', 'Documentation'],
-    complexity: 'Medium'
-  },
-  {
     id: 'in-time-app',
     title: 'In-Time - Time Management App',
     description:
-      'A personal productivity and planning application built with Next.js to support schedule management and time tracking.',
+      'A simple CLock UI with animation.',
     status: 'Active Development',
     repo: 'https://github.com/siddharth-mourya/in-time',
     techStack: ['Next.js', 'TypeScript', 'SASS', 'moment'],
@@ -249,9 +164,6 @@ export const projects: Project[] = [
       'Optimized build setup using Turbopack'
     ],
     responsibilities: [
-      'Designed frontend architecture for time management',
-      'Built reusable hooks and interaction patterns',
-      'Ensured responsive experience across devices'
     ],
     impact: [
       'Demonstrated modern React and performance-focused delivery'
