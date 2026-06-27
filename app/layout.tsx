@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
 import { SiteHeader } from '@/components/layout/SiteHeader';
+import { QueryClientContainer } from '@/components/providers/QueryClientProvider';
 
 export const metadata: Metadata = {
   title: 'Siddharth Mourya | Frontend Developer Portfolio',
@@ -26,10 +27,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <SiteHeader />
-          {children}
-        </ThemeProvider>
+        <QueryClientContainer>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+            <SiteHeader />
+            {children}
+          </ThemeProvider>
+        </QueryClientContainer>
       </body>
     </html>
   );
